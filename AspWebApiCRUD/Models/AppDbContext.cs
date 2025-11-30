@@ -18,7 +18,7 @@ public partial class AppDbContext : DbContext
     public virtual DbSet<Student> Students { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=IZAZ-UR-RAHMAN\\SQLEXPRESS;Database=DbForCRUD;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
